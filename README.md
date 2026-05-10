@@ -90,12 +90,6 @@ Server runs on `http://localhost:5000`
 
 ## Default Admin Credentials
 
-| Field | Value |
-|-------|-------|
-| Email | protonium33@gmail.com |
-| Password | 98989877 |
-| Role | super_admin |
-
 > ⚠️ **IMPORTANT:** Change the password immediately after first login in a production environment.
 
 ---
