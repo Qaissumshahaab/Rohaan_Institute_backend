@@ -56,7 +56,7 @@ const studentSchema = new mongoose.Schema({
 studentSchema.pre('save', async function (next) {
   if (!this.studentId) {
     const count = await mongoose.model('Student').countDocuments();
-    this.studentId = `MIDT-${String(count + 1).padStart(4, '0')}`;
+    this.studentId = `RICS-${String(count + 1).padStart(4, '0')}`;
   }
   next();
 });
