@@ -20,7 +20,7 @@ app.use(helmet());
 // Rate limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100,
+  max: 1000,
   message: 'Too many requests from this IP, please try again after 15 minutes',
 });
 app.use('/api/', limiter);
@@ -53,7 +53,7 @@ app.use('/api', routes);
 
 // Health check
 app.get('/', (req, res) => {
-  res.json({ success: true, message: 'MIDT API is running 🚀' });
+  res.json({ success: true, message: 'RICS API is running 🚀' });
 });
 
 // 404 handler
